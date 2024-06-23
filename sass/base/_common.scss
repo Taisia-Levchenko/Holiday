@@ -1,17 +1,23 @@
-a {
-    text-decoration: none;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
 }
-ul {
-    list-style: none;
+img, button {
+    display: block;
 }
 .container {
     min-width: 320px;
     max-width: 767px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
-
-    @media (min-width: 768px) {
+    // padding: 0 15px;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
         max-width: 1200px;
     }
 }

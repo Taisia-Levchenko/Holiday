@@ -1,3 +1,8 @@
-@import "./base/common";
 @import "./utils/variables";
+
+@import "./base/common";
+@import "./base/reset";
+
 @import "./components/header";
+@import "./components/hero";
+@import "./components/partners";

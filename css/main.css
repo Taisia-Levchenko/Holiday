@@ -1,9 +1,13 @@
-a {
-  text-decoration: none;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
 }
 
-ul {
-  list-style: none;
+img, button {
+  display: block;
 }
 
 .container {
@@ -11,10 +15,78 @@ ul {
   max-width: 767px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, p, button, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__logo {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.header .container {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  padding-top: 19px;
+}
+@media screen and (min-width: 768px) {
+  .header .container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 37px 49px 0;
+  }
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+}
+.header-list__link {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding: 11px 4px;
+}
+.header-list__link--signup {
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+
+.hero {
+  background-image: url(/img/hero-mob.jpg);
 }

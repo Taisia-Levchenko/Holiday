@@ -1,7 +1,7 @@
-$fonts: (
-    "roboto-font": #{'"Roboto", sans-serif'},
-    "raleway-font": #{'"Raleway", sans-serif'},
+$colors :(
+    'white': rgb(255, 255, 255),
+    
 );
-@function getFont($key){
-    @return map-get($fonts, $key);
-}
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }
